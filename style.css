@@ -1,0 +1,45 @@
+main{
+    background-color: darkred;
+    height: 100vh; /* Ensure the main element takes the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+
+#spot{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 4px;
+    column-gap: 0;
+    row-gap: 0;
+    background-color: #ce4848;
+    box-shadow: 5px 5px 15px rgb(54, 18, 18); /* Shadow around the entire grid */
+    margin-top: 50px;
+
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    outline: 1px solid black;
+    padding: 50px;
+    box-shadow: 2px 2px 5px rgb(154, 108, 108);
+    cursor: pointer;
+}
+
+#button{
+    margin-top: 20px; /* Adjust the margin to position the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
