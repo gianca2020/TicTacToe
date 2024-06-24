@@ -40,6 +40,7 @@ function restartAll(event){
         currPlayer = player;
         isFunctionCalled = false;
         win=false;
+        document.getElementById('winner').innerText = ``;
     })
 }
 
@@ -71,7 +72,10 @@ function checkWinner() {
         if (cellA === cellB && cellB === cellC) {
             win = true;
             document.getElementById('winner').innerText = `${cellA} wins!`;
-            restartAll();
+            break;
+        }else if(cellA === cellC && cellB === cellA){
+            win = true;
+            document.getElementById('winner').innerText = `${cellA} wins!`;
             break;
         }
     }
